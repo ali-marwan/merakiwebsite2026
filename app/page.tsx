@@ -124,7 +124,8 @@ export default function HomePage() {
               </h3>
               <p className="text-[14.5px] text-ink-200 mt-3 leading-relaxed">
                 The same team that sets you up handles your monthly accounts,
-                files your VAT, prepares your reports, and feeds your AI Portal.
+                files your VAT, prepares your reports, and powers your AI
+                Assistant.
               </p>
             </div>
             <span className="mt-7 inline-flex items-center gap-2 text-bronze-300 text-[14px] font-medium">
@@ -193,25 +194,37 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 8 — AI Portal */}
+      {/* 8 — AI Assistant */}
       <Section tone="ink">
         <div className="grid grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="col-span-12 lg:col-span-5">
             <p className="eyebrow text-ink-200 [&::before]:bg-bronze-400">
-              Meraki AI Portal
+              Meraki AI Assistant
             </p>
             <h2 className="heading-md mt-5 text-bone text-balance">
-              AI-assisted workflows, professional review where it matters.
+              AI-Assisted Finance Workflows, Built Into the Meraki System.
             </h2>
             <p className="body-lg mt-6 text-ink-200 text-pretty">
-              Upload invoices, receipts, petty cash records, and voice notes
-              through a smart finance portal. Meraki AI organises documents,
-              suggests categories, flags missing information, and prepares
-              records for accounting and tax review.
+              Upload invoices, receipts, petty cash records, and notes through
+              a smart finance workflow. Meraki's AI Assistant helps organise
+              documents, suggest categories, flag missing information, and
+              prepare records for professional accounting and tax review.
             </p>
-            <div className="mt-9">
-              <Link href="/ai-portal" className="btn-accent">
-                Explore AI Portal <span aria-hidden>→</span>
+            <p className="mt-5 font-display text-[15px] font-semibold tracking-display text-bronze-300">
+              Part of one system. One team. One standard.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link href="/ai-assistant" className="btn-accent">
+                Explore AI Assistant <span aria-hidden>→</span>
+              </Link>
+              <Link
+                href="/contact?topic=ai-assistant"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-700 bg-transparent px-7 py-[14px] text-[14.5px] font-medium text-bone transition-all hover:bg-bone hover:text-ink-900"
+              >
+                Subscribe When Available <span aria-hidden>→</span>
+              </Link>
+              <Link href="/contact" className="btn-ghost text-ink-200 hover:bg-ink-900 hover:text-bone">
+                Speak to Our Team
               </Link>
             </div>
             <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3.5">

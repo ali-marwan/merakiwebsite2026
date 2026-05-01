@@ -16,7 +16,7 @@ export const nav = [
   { label: "Services", href: "/services" },
   { label: "Packages", href: "/packages" },
   { label: "E-Invoicing", href: "/e-invoicing" },
-  { label: "AI Portal", href: "/ai-portal" },
+  { label: "AI Assistant", href: "/ai-assistant" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -28,7 +28,7 @@ export const hero = {
   tagline: "One system. One team. One standard.",
   ctas: [
     { label: "View Packages", href: "/packages", micro: "Choose the package that fits your business.", variant: "primary" },
-    { label: "Explore AI Portal", href: "/ai-portal", micro: "Subscribe online and manage your finance workflow digitally.", variant: "accent" },
+    { label: "Explore AI Assistant", href: "/ai-assistant", micro: "A smart finance workflow with professional review where it matters.", variant: "accent" },
     { label: "Speak to Our Team", href: "/contact", micro: "Get support, consultation, or a custom solution.", variant: "secondary" },
   ] as const,
 };
@@ -175,6 +175,54 @@ export const portalFeatures = [
   { title: "Human review built in", body: "Smart workflows, professional oversight where accuracy matters." },
 ];
 
+// AI Assistant — dedicated page content
+export const aiAssistant = {
+  hero: {
+    eyebrow: "Meraki AI Assistant",
+    badge: "Coming soon · Portal preview",
+    headline: "Meraki AI Assistant",
+    sub: "A smart finance workflow that helps UAE businesses capture invoices, organise records, reduce manual entry, and prepare financial data for professional review.",
+    principle: "AI-assisted finance workflows with professional review where accuracy matters.",
+  },
+  helps: [
+    { title: "Invoice upload", body: "Email-in, drag-drop, or capture from mobile.", icon: "upload" },
+    { title: "Receipt capture", body: "Photograph receipts; OCR pulls the fields.", icon: "camera" },
+    { title: "OCR document reading", body: "Supplier, TRN, lines, VAT, totals — auto-read.", icon: "scan" },
+    { title: "Expense categorisation", body: "AI suggests categories; you confirm.", icon: "tag" },
+    { title: "Petty cash logging", body: "Quick entries with photo or voice support.", icon: "cash" },
+    { title: "Voice note records", body: "Speak it. The Assistant logs it.", icon: "mic" },
+    { title: "Missing-document alerts", body: "Find gaps before deadlines find them first.", icon: "alert" },
+    { title: "VAT preparation support", body: "Drafts ready for Meraki team review.", icon: "vat" },
+    { title: "E-invoicing workflow", body: "Tax invoice quality checks and capture.", icon: "invoice" },
+    { title: "Meraki team review", body: "Human eyes where accuracy matters.", icon: "review" },
+  ],
+  steps: [
+    { step: "01", title: "Upload invoices, receipts, or notes", body: "Drag-drop, email-in, photograph, or record a voice note." },
+    { step: "02", title: "AI reads and organises the document", body: "OCR extracts supplier, TRN, line items, VAT, and totals." },
+    { step: "03", title: "Categories and missing data are suggested", body: "The Assistant proposes categories and flags incomplete fields." },
+    { step: "04", title: "Meraki team reviews where required", body: "Edge cases and judgement calls handled by professionals." },
+    { step: "05", title: "Reports and tax records are prepared", body: "Monthly accounts, VAT drafts, and clean audit trails." },
+  ],
+  builtFor: {
+    title: "Built for business owners.",
+    body: "The AI Assistant is designed for SMEs, shops, entrepreneurs, and companies that don't want messy WhatsApp files, scattered Excel sheets, and last-minute invoice collection. Capture as work happens. Review on schedule. Close the books with confidence.",
+    audiences: [
+      "SMEs without full finance teams",
+      "Shops & retail with daily receipts",
+      "Founders running multi-entity setups",
+      "Established companies tightening ops",
+    ],
+  },
+  humanReview: {
+    title: "AI helps organise. Professionals verify.",
+    body: "The AI Assistant supports the workflow, but accounting, tax, and compliance decisions can be reviewed by Meraki's professional team where accuracy matters. The system never publishes a return or signs off on books on its own — every regulated submission flows through human review.",
+  },
+  finalCta: {
+    title: "Prepare your business for cleaner finance operations.",
+    sub: "Subscribe when the Meraki AI Assistant is available, or speak to our team about which package fits.",
+  },
+};
+
 export const whyMeraki = [
   { title: "One connected system", body: "Setup, accounting, tax and compliance run on one workflow — not separate suppliers." },
   { title: "One professional team", body: "A single point of accountability instead of fragmented service providers." },
@@ -257,7 +305,7 @@ export const aboutPoints = [
   { title: "Why we exist", body: "Most UAE businesses juggle disconnected providers — a setup agent, a part-time bookkeeper, a tax filer, a PRO. The cost of that fragmentation shows up at year-end, in penalties, in missed decisions. We replace that with one connected system." },
   { title: "Our approach", body: "Structured workflows. Clear monthly reporting. AI-assisted operations where it accelerates work. Human review where accuracy matters. No theatre, no guesswork." },
   { title: "UAE focus", body: "We are built around UAE accounting practice and FTA processes. We understand how mainland and free zone operations differ, and how to keep both audit-ready." },
-  { title: "Digital-first future", body: "Our AI Portal is being built to give clients a clean way to upload, categorise, and review their finance workflow — backed by our team." },
+  { title: "Digital-first future", body: "Our AI Assistant is being built to give clients a clean way to upload, categorise, and review their finance workflow — backed by our team." },
 ];
 
 export const faq = [
@@ -279,7 +327,7 @@ export const faq = [
   },
   {
     q: "Can I subscribe online?",
-    a: "Yes — the AI Portal is being prepared for online subscription. Accounting and tax packages can be initiated online with onboarding handled by our team.",
+    a: "Yes — the AI Assistant is being prepared for online subscription. Accounting and tax packages can be initiated online with onboarding handled by our team.",
   },
   {
     q: "Mainland or free zone — which do you support?",

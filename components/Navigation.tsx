@@ -66,8 +66,9 @@ export function Navigation() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Link href="/contact" className="btn-ghost">
-            Client Login
+          {/* TODO(auth): replace href with /portal/login when auth exists */}
+          <Link href="/ai-assistant" className="btn-ghost">
+            Portal
           </Link>
           <Link href="/contact" className="btn-primary">
             Speak to Our Team
@@ -114,8 +115,9 @@ export function Navigation() {
               </Link>
             ))}
             <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <Link href="/contact" className="btn-secondary w-full">
-                Client Login
+              {/* TODO(auth): replace with /portal/login */}
+              <Link href="/ai-assistant" className="btn-secondary w-full">
+                Portal
               </Link>
               <Link href="/contact" className="btn-primary w-full">
                 Speak to Our Team

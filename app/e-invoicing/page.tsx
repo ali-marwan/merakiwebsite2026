@@ -108,10 +108,10 @@ export default function EInvoicingPage() {
               Capture invoices the moment they arrive — your records stay clean.
             </h2>
             <p className="body-lg mt-5 text-ink-200 text-balance">
-              Drop or photograph supplier invoices into the Meraki AI Portal. OCR reads the fields, suggests categories, flags missing information, and prepares the entry for review — so your books and your VAT recovery don't drift.
+              Drop or photograph supplier invoices into the Meraki AI Assistant. OCR reads the fields, suggests categories, flags missing information, and prepares the entry for review — so your books and your VAT recovery don't drift.
             </p>
             <div className="mt-7">
-              <Link href="/ai-portal" className="btn-accent">Explore AI Portal <span aria-hidden>→</span></Link>
+              <Link href="/ai-assistant" className="btn-accent">Explore AI Assistant <span aria-hidden>→</span></Link>
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6">

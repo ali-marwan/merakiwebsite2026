@@ -9,7 +9,7 @@ const services = [
   "PRO Services",
   "Cash Flow Management",
   "E-Invoicing Readiness",
-  "AI Portal",
+  "AI Assistant",
   "Audit Readiness",
   "Custom Advisory",
 ];
@@ -36,7 +36,7 @@ const businessTypes = [
 
 const emirates = ["Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Ras Al Khaimah", "Fujairah", "Umm Al Quwain"];
 
-const intents = ["Speak to team", "Book consultation", "Request custom quote", "Subscribe to AI Portal"];
+const intents = ["Speak to team", "Book consultation", "Request custom quote", "Subscribe to AI Assistant"];
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
