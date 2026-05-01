@@ -108,7 +108,7 @@ export default function PackagesPage() {
           <div className="grid grid-cols-12 gap-8 items-center">
             <div className="col-span-12 md:col-span-8">
               <p className="eyebrow">Important note on pricing</p>
-              <h3 className="font-display text-[26px] md:text-[32px] mt-3 text-ink-900">
+              <h3 className="font-display text-[26px] md:text-[32px] font-semibold tracking-display mt-3 text-ink-900">
                 Starting prices are transparent. Final pricing is shaped by your business.
               </h3>
               <p className="body mt-3 max-w-2xl">

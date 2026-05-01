@@ -48,7 +48,7 @@ export default function AIPortalPage() {
                 <span className="font-mono text-[11px] text-bronze-500">0{i + 1}</span>
                 <span className="chip-accent">AI + Review</span>
               </div>
-              <h3 className="font-display text-[22px] mt-3 text-ink-900">{f.title}</h3>
+              <h3 className="font-display text-[22px] md:text-[24px] font-semibold tracking-display mt-3 text-ink-900">{f.title}</h3>
               <p className="text-[14px] text-ink-600 mt-2 leading-relaxed">{f.body}</p>
             </div>
           ))}
@@ -76,7 +76,7 @@ export default function AIPortalPage() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p className="font-display text-[20px] text-ink-900">{t}</p>
+                    <p className="font-display text-[20px] font-semibold tracking-display text-ink-900">{t}</p>
                     <p className="text-[14px] text-ink-600">{s}</p>
                   </div>
                 </li>
@@ -158,7 +158,7 @@ function UploadFlowVisual() {
       <div className="rounded-2xl border border-ink-100 bg-white shadow-soft p-6 space-y-4">
         {/* Upload card */}
         <div className="border border-dashed border-ink-200 rounded-xl p-6 text-center bg-bone">
-          <p className="font-display text-[18px] text-ink-900">Drop your invoices here</p>
+          <p className="font-display text-[18px] font-semibold tracking-display text-ink-900">Drop your invoices here</p>
           <p className="text-[12px] text-ink-400 mt-1">PDF, JPG, HEIC · or capture by phone</p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-ink-100 bg-white px-3 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-bronze-400 animate-pulse" />

@@ -33,12 +33,17 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['var(--font-instrument)', "ui-serif", "Georgia", "serif"],
-        sans: ['var(--font-inter)', "ui-sans-serif", "system-ui", "-apple-system", "sans-serif"],
+        display: ['var(--font-manrope)', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['var(--font-manrope)', "var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"],
+      },
+      maxWidth: {
+        site: "1440px",
       },
       letterSpacing: {
         tightish: "-0.015em",
+        display: "-0.025em",
+        "display-tight": "-0.035em",
       },
       boxShadow: {
         soft: "0 1px 2px rgba(14, 22, 38, 0.04), 0 8px 24px rgba(14, 22, 38, 0.06)",

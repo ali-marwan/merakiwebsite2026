@@ -45,7 +45,7 @@ export default function ContactPage() {
               <p className="mt-3 text-[13px] text-ink-400">By appointment.</p>
             </div>
             <div className="rounded-2xl border border-bronze-200 bg-bronze-50/50 p-6">
-              <p className="font-display text-[20px] text-ink-900">Working hours</p>
+              <p className="font-display text-[20px] font-semibold tracking-display text-ink-900">Working hours</p>
               <ul className="mt-3 space-y-1.5 text-[14px] text-ink-700">
                 <li className="flex items-center justify-between"><span>Mon — Fri</span><span>09:00 — 18:00</span></li>
                 <li className="flex items-center justify-between"><span>Saturday</span><span>10:00 — 14:00</span></li>
@@ -84,7 +84,7 @@ function ContactCard({
       }`}
     >
       <p className="text-[12px] uppercase tracking-wider text-ink-400">{label}</p>
-      <p className="mt-2 font-display text-[24px] text-ink-900">{value}</p>
+      <p className="mt-2 font-display text-[24px] font-semibold tracking-display text-ink-900">{value}</p>
       <p className="mt-3 inline-flex items-center gap-2 text-[13px] text-bronze-700">
         Open <span aria-hidden>→</span>
       </p>

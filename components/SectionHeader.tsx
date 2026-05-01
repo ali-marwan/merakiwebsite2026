@@ -15,12 +15,14 @@ export function SectionHeader({
 }: Props) {
   return (
     <div
-      className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""} ${className}`}
+      className={`max-w-3xl ${
+        align === "center" ? "mx-auto text-center" : ""
+      } ${className}`}
     >
       {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-      <h2 className="heading-lg mt-4 text-balance">{title}</h2>
+      <h2 className="heading-md mt-5 text-balance">{title}</h2>
       {description && (
-        <p className="body-lg mt-5 text-balance">{description}</p>
+        <p className="body-lg mt-5 text-pretty">{description}</p>
       )}
     </div>
   );

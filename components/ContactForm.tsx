@@ -53,7 +53,7 @@ export function ContactForm() {
         <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-bronze-50 border border-bronze-200 text-bronze-700 text-xl">
           ✓
         </span>
-        <h3 className="mt-5 font-display text-[28px] text-ink-900">Thanks — we'll be in touch.</h3>
+        <h3 className="mt-5 font-display text-[28px] md:text-[32px] font-semibold tracking-display text-ink-900">Thanks — we'll be in touch.</h3>
         <p className="body mt-3 max-w-md mx-auto">
           A member of our team will respond within one business day. For urgent matters, message us on WhatsApp.
         </p>

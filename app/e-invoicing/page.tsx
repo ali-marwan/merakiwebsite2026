@@ -32,7 +32,7 @@ export default function EInvoicingPage() {
           {eInvoicingPoints.map((p, i) => (
             <div key={p.title} className="card p-7 card-hover">
               <span className="font-mono text-[11px] text-bronze-500">0{i + 1}</span>
-              <h3 className="font-display text-[24px] mt-3 text-ink-900">{p.title}</h3>
+              <h3 className="font-display text-[22px] md:text-[24px] font-semibold tracking-display mt-3 text-ink-900">{p.title}</h3>
               <p className="body mt-3">{p.body}</p>
             </div>
           ))}

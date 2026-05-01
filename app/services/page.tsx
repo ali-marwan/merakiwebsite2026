@@ -49,7 +49,7 @@ export default function ServicesPage() {
               <article id={p.key} key={p.key} className="scroll-mt-28">
                 <div className="flex items-baseline gap-4">
                   <span className="font-mono text-[12px] text-bronze-500">0{i + 1}</span>
-                  <h2 className="font-display text-[40px] md:text-[52px] text-ink-900 tracking-tightish">
+                  <h2 className="font-display text-[40px] md:text-[52px] lg:text-[60px] font-bold tracking-display-tight text-ink-900 leading-[1.05]">
                     {p.name}
                   </h2>
                 </div>

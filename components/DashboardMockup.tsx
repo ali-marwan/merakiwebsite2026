@@ -85,7 +85,7 @@ export function DashboardMockup({ compact = false }: { compact?: boolean }) {
               ].map((s) => (
                 <div key={s.k} className="rounded-xl border border-ink-100 bg-white p-3">
                   <p className="text-[11px] text-ink-400">{s.k}</p>
-                  <p className="mt-1 font-display text-[18px] text-ink-900">{s.v}</p>
+                  <p className="mt-1 font-display text-[18px] font-semibold tracking-display text-ink-900">{s.v}</p>
                   <p className="text-[10px] text-bronze-600 mt-0.5">{s.trend}</p>
                 </div>
               ))}

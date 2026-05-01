@@ -24,26 +24,26 @@ export default function AboutPage() {
 
       {/* Approach */}
       <Section>
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-5 space-y-3">
+        <div className="grid grid-cols-12 gap-10 lg:gap-16">
+          <div className="col-span-12 lg:col-span-5 space-y-4">
             <p className="eyebrow">Our principle</p>
-            <h2 className="heading-md text-balance">
-              <span className="text-bronze-500">One system.</span><br />
-              <span className="text-bronze-500">One team.</span><br />
-              <span className="text-bronze-500">One standard.</span>
+            <h2 className="font-display text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-bold tracking-display-tight leading-[1.02] text-ink-900">
+              One <span className="text-bronze-500">system</span>.<br />
+              One <span className="text-bronze-500">team</span>.<br />
+              One <span className="text-bronze-500">standard</span>.
             </h2>
-            <p className="body mt-4 max-w-md">
+            <p className="body-lg mt-5 max-w-md">
               We replace fragmentation with one workflow. The same team that handles your setup runs your accounts, files your VAT, prepares your reports, and powers your portal.
             </p>
           </div>
-          <div className="col-span-12 lg:col-span-7 space-y-6">
+          <div className="col-span-12 lg:col-span-7 space-y-7">
             {aboutPoints.map((p, i) => (
-              <div key={p.title} className="border-l border-ink-100 pl-6">
+              <div key={p.title} className="border-l border-ink-100 pl-7">
                 <div className="flex items-center gap-3">
                   <span className="font-mono text-[11px] text-bronze-500">0{i + 1}</span>
-                  <h3 className="font-display text-[24px] text-ink-900">{p.title}</h3>
+                  <h3 className="font-display text-[22px] md:text-[24px] font-semibold tracking-display text-ink-900">{p.title}</h3>
                 </div>
-                <p className="body mt-2">{p.body}</p>
+                <p className="body mt-3">{p.body}</p>
               </div>
             ))}
           </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
             { k: "SME → Established", v: "Packaged for any stage" },
           ].map((s) => (
             <div key={s.k} className="rounded-2xl border border-ink-700 bg-ink-900 p-6">
-              <p className="font-display text-[28px] text-bronze-300">{s.k}</p>
+              <p className="font-display text-[28px] font-bold tracking-display-tight text-bronze-300">{s.k}</p>
               <p className="text-[13px] text-ink-200 mt-2">{s.v}</p>
             </div>
           ))}
@@ -89,7 +89,7 @@ export default function AboutPage() {
             },
           ].map((g) => (
             <div key={g.t} className="card p-7">
-              <h3 className="font-display text-[24px] text-ink-900">{g.t}</h3>
+              <h3 className="font-display text-[22px] md:text-[24px] font-semibold tracking-display text-ink-900">{g.t}</h3>
               <p className="body mt-3">{g.b}</p>
             </div>
           ))}
