@@ -38,7 +38,8 @@ const config: Config = {
         mono: ['"JetBrains Mono"', "ui-monospace", "Menlo", "monospace"],
       },
       maxWidth: {
-        site: "1440px",
+        site: "1600px",
+        "site-xl": "1720px",
       },
       letterSpacing: {
         tightish: "-0.015em",
