@@ -193,7 +193,21 @@ export const howItWorks = [
   { step: "06", title: "You receive clear reports and updates", body: "Statements, dashboards, and compliance status — every month." },
 ];
 
-export const allPackages = {
+type Pkg = {
+  name: string;
+  best: string;
+  price: string;
+  includes: string[];
+  excludes: string[];
+  featured?: boolean;
+};
+
+export const allPackages: {
+  accounting: Pkg[];
+  tax: Pkg[];
+  setup: Pkg[];
+  ai: Pkg[];
+} = {
   accounting: [
     { name: "Starter", best: "Micro businesses & solo founders", price: "AED ___ / month", includes: ["Monthly bookkeeping (up to 30 transactions)", "Bank reconciliation", "Quarterly summary", "Email support"], excludes: ["Payroll", "Corporate tax filing", "Management dashboards"] },
     { name: "Compliance", best: "Active SMEs", price: "AED ___ / month", includes: ["Full monthly bookkeeping", "VAT submissions", "Corporate tax tracking", "Monthly P&L and balance sheet"], excludes: ["Forecasting", "Dedicated account manager"], featured: true },
