@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ContactCTA } from "@/components/ContactCTA";

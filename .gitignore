@@ -9,3 +9,8 @@ yarn-debug.log*
 yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
+
+# local tooling
+.claude/
+.vscode/
+.idea/

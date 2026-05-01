@@ -5,7 +5,7 @@ import { Section } from "@/components/Section";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ContactCTA } from "@/components/ContactCTA";
 import { FAQSection } from "@/components/FAQSection";
-import { aboutPoints, faq, brand } from "@/lib/content";
+import { aboutPoints, faq } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About — UAE Business Consultancy & Finance Operations",

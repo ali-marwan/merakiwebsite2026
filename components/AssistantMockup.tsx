@@ -1,6 +1,5 @@
 // Premium AI Assistant preview — pure CSS/SVG, no backend dependency.
-// When the real portal is built, swap the static rows for live data from
-// the hooks in lib/portal-hooks.ts.
+// When the real portal is built, swap the static rows for live data.
 
 export function AssistantMockup() {
   return (
