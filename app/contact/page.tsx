@@ -7,7 +7,7 @@ import { brand } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact — Speak to Meraki Consultants",
   description:
-    "Speak to Meraki Consultants about UAE accounting, VAT, corporate tax, business setup, e-invoicing readiness, or AI Assistant subscriptions.",
+    "Speak to Meraki Consultants about UAE accounting, VAT, corporate tax, business setup, e-invoicing readiness, or Meraki AI invoice review.",
 };
 
 export default function ContactPage() {

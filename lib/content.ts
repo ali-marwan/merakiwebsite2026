@@ -16,7 +16,7 @@ export const nav = [
   { label: "Services", href: "/services" },
   { label: "Packages", href: "/packages" },
   { label: "E-Invoicing", href: "/e-invoicing" },
-  { label: "AI Assistant", href: "/ai-assistant" },
+  { label: "Meraki AI", href: "/meraki-ai" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -28,7 +28,7 @@ export const hero = {
   tagline: "One system. One team. One standard.",
   ctas: [
     { label: "View Packages", href: "/packages", micro: "Choose the package that fits your business.", variant: "primary" },
-    { label: "Explore AI Assistant", href: "/ai-assistant", micro: "A smart finance workflow with professional review where it matters.", variant: "accent" },
+    { label: "Explore Meraki AI", href: "/meraki-ai", micro: "AI-powered invoice review, VAT checks, and e-invoicing readiness.", variant: "accent" },
     { label: "Speak to Our Team", href: "/contact", micro: "Get support, consultation, or a custom solution.", variant: "secondary" },
   ] as const,
 };
@@ -175,51 +175,127 @@ export const portalFeatures = [
   { title: "Human review built in", body: "Smart workflows, professional oversight where accuracy matters." },
 ];
 
-// AI Assistant — dedicated page content
-export const aiAssistant = {
+// Meraki AI — UAE invoice compliance copilot. Dedicated page content.
+export const merakiAi = {
   hero: {
-    eyebrow: "Meraki AI Assistant",
-    badge: "Coming soon · Portal preview",
-    headline: "Meraki AI Assistant",
-    sub: "A smart finance workflow that helps UAE businesses capture invoices, organise records, reduce manual entry, and prepare financial data for professional review.",
-    principle: "AI-assisted finance workflows with professional review where accuracy matters.",
+    eyebrow: "Meraki AI",
+    badge: "UAE Invoice Compliance Copilot",
+    headline: "AI-Powered Invoice, VAT & Compliance Review for UAE Businesses",
+    sub: "Meraki AI helps businesses review invoices, detect VAT errors, classify transactions, prepare for UAE e-invoicing, and connect clean data with existing accounting systems like Zoho, QuickBooks, Xero, Tally, or Excel.",
+    principle: "Your UAE invoice compliance copilot.",
   },
-  helps: [
-    { title: "Invoice upload", body: "Email-in, drag-drop, or capture from mobile.", icon: "upload" },
-    { title: "Receipt capture", body: "Photograph receipts; OCR pulls the fields.", icon: "camera" },
-    { title: "OCR document reading", body: "Supplier, TRN, lines, VAT, totals — auto-read.", icon: "scan" },
-    { title: "Expense categorisation", body: "AI suggests categories; you confirm.", icon: "tag" },
-    { title: "Petty cash logging", body: "Quick entries with photo or voice support.", icon: "cash" },
-    { title: "Voice note records", body: "Speak it. The Assistant logs it.", icon: "mic" },
-    { title: "Missing-document alerts", body: "Find gaps before deadlines find them first.", icon: "alert" },
-    { title: "VAT preparation support", body: "Drafts ready for Meraki team review.", icon: "vat" },
-    { title: "E-invoicing workflow", body: "Tax invoice quality checks and capture.", icon: "invoice" },
-    { title: "Meraki team review", body: "Human eyes where accuracy matters.", icon: "review" },
+  // Section 1 — What It Is
+  whatItIs: {
+    title: "Not accounting software. A compliance intelligence layer.",
+    body: "Zoho, QuickBooks, Xero, and Tally help businesses create invoices, record transactions, manage bookkeeping, and generate accounting reports. Meraki AI is different. It reviews invoices, checks VAT details, identifies missing information, flags compliance risks, supports tax categorisation, and prepares documents for accountant review.",
+    accountingSoftware: [
+      "Create invoices",
+      "Record transactions",
+      "Maintain ledgers",
+      "Generate financial reports",
+      "Manage bookkeeping workflow",
+      "Store accounting records",
+    ],
+    merakiAi: [
+      "Review invoice compliance",
+      "Detect missing TRN details",
+      "Flag VAT risks",
+      "Identify duplicate invoices",
+      "Classify expenses & revenue",
+      "Prepare VAT review summaries",
+      "Support corporate tax categorisation",
+      "Prepare for UAE e-invoicing readiness",
+      "Route documents for accountant review",
+    ],
+    statement: "Meraki AI works with accounting platforms. It does not replace them.",
+  },
+  // Section 2 — What It Checks
+  checks: [
+    { title: "VAT Invoice Compliance", body: "Checks whether invoices contain key VAT information. Flags missing TRN, invoice date, supplier details, VAT amount, or required fields.", icon: "vat" },
+    { title: "TRN & Supplier Details", body: "Detects missing or incomplete supplier and customer tax details.", icon: "id" },
+    { title: "VAT Treatment Review", body: "Flags possible incorrect VAT treatment and tax category issues.", icon: "review" },
+    { title: "Duplicate Invoice Detection", body: "Identifies possible duplicate invoices before they affect records.", icon: "duplicate" },
+    { title: "Expense & Revenue Classification", body: "Suggests categories for expenses, revenue, projects, or departments.", icon: "tag" },
+    { title: "Supplier Invoice Review", body: "Helps review supplier invoices before VAT recovery.", icon: "supplier" },
+    { title: "Corporate Tax Categorisation", body: "Supports categorisation of expenses and records for corporate tax review.", icon: "ct" },
+    { title: "E-Invoicing Readiness", body: "Helps prepare invoice data and workflows for future UAE e-invoicing requirements.", icon: "invoice" },
+    { title: "Missing Document Alerts", body: "Flags invoices or receipts that need additional information.", icon: "alert" },
+    { title: "Accountant Review Queue", body: "Routes high-risk or unclear items for Meraki accountant review.", icon: "queue" },
   ],
-  steps: [
-    { step: "01", title: "Upload invoices, receipts, or notes", body: "Drag-drop, email-in, photograph, or record a voice note." },
-    { step: "02", title: "AI reads and organises the document", body: "OCR extracts supplier, TRN, line items, VAT, and totals." },
-    { step: "03", title: "Categories and missing data are suggested", body: "The Assistant proposes categories and flags incomplete fields." },
-    { step: "04", title: "Meraki team reviews where required", body: "Edge cases and judgement calls handled by professionals." },
-    { step: "05", title: "Reports and tax records are prepared", body: "Monthly accounts, VAT drafts, and clean audit trails." },
-  ],
-  builtFor: {
-    title: "Built for business owners.",
-    body: "The AI Assistant is designed for SMEs, shops, entrepreneurs, and companies that don't want messy WhatsApp files, scattered Excel sheets, and last-minute invoice collection. Capture as work happens. Review on schedule. Close the books with confidence.",
-    audiences: [
-      "SMEs without full finance teams",
-      "Shops & retail with daily receipts",
-      "Founders running multi-entity setups",
-      "Established companies tightening ops",
+  // Section 3 — MVP product (Invoice Review)
+  mvp: {
+    title: "First product: Meraki AI Invoice Review",
+    sub: "Upload your invoices. Get a VAT and compliance review before filing.",
+    steps: [
+      { step: "01", title: "Upload documents", body: "Invoices, receipts, supplier invoices, quotations, LPOs, emails, or WhatsApp screenshots." },
+      { step: "02", title: "AI extracts the data", body: "Supplier, customer, TRN, invoice number, date, amount, VAT, category, payment details." },
+      { step: "03", title: "Compliance checks run", body: "Missing information, possible VAT errors, duplicates, and risk flags surfaced automatically." },
+      { step: "04", title: "Accountant review", body: "A Meraki accountant reviews flagged items where needed." },
+      { step: "05", title: "Review report delivered", body: "A clear invoice review report with VAT and compliance summary, ready for filing." },
+    ],
+    reportShows: [
+      "Passed checks",
+      "Errors",
+      "Warnings",
+      "Recommended corrections",
+      "VAT treatment notes",
+      "Documents requiring accountant review",
     ],
   },
-  humanReview: {
-    title: "AI helps organise. Professionals verify.",
-    body: "The AI Assistant supports the workflow, but accounting, tax, and compliance decisions can be reviewed by Meraki's professional team where accuracy matters. The system never publishes a return or signs off on books on its own — every regulated submission flows through human review.",
+  // Section 4 — Integrations (planned, not live)
+  integrations: {
+    title: "Designed to work with your existing accounting system.",
+    body: "Meraki AI is built to support businesses already using accounting tools. It can be structured to connect with existing workflows instead of forcing companies to replace their systems.",
+    items: [
+      { name: "Zoho Books", note: "Planned" },
+      { name: "QuickBooks", note: "Planned" },
+      { name: "Xero", note: "Planned" },
+      { name: "Tally", note: "Planned" },
+      { name: "Excel", note: "Export-ready" },
+      { name: "Email", note: "Planned" },
+      { name: "WhatsApp", note: "Planned" },
+      { name: "Bank feeds", note: "Planned" },
+      { name: "UAE e-invoicing providers", note: "Future" },
+    ],
+  },
+  // Section 5 — Workflow
+  workflow: [
+    { step: "01", title: "Upload invoice or connect accounting software", body: "Documents arrive via portal, email, or planned integrations." },
+    { step: "02", title: "Meraki AI extracts and checks data", body: "Key fields parsed, structured, and validated against compliance rules." },
+    { step: "03", title: "VAT, tax, and e-invoicing risks are flagged", body: "Missing TRN, VAT mismatches, duplicates, and review prompts surfaced." },
+    { step: "04", title: "Manager or accountant approves", body: "Approval queue routes items to the right person before they hit the books." },
+    { step: "05", title: "Data syncs to accounting software or export", body: "Clean records sent to your existing system or exported for upload." },
+    { step: "06", title: "Documents and audit trail are stored", body: "Original files indexed and searchable, with full review history." },
+    { step: "07", title: "Monthly VAT/compliance summary is prepared", body: "Ready for accountant sign-off and filing." },
+  ],
+  // Section 6 — Compliance strategy
+  compliance: {
+    title: "Built for readiness, review, and safer workflows.",
+    body: "Meraki AI is not positioned as a UAE Accredited Service Provider for e-invoicing at this stage. The safer strategy is to focus first on invoice validation, VAT checking, workflow automation, and compliance readiness. As UAE e-invoicing develops, Meraki AI can later integrate with accredited service providers where required.",
+  },
+  // Section 7 — Audience
+  audience: {
+    title: "Built for UAE businesses that handle invoices every month.",
+    body: "Meraki AI is for companies that already have invoices, receipts, supplier bills, and VAT records — but need a smarter way to review, classify, validate, and prepare them before accounting and tax submission.",
+    segments: [
+      "SMEs",
+      "Contractors",
+      "Consultants",
+      "Service businesses",
+      "Landlords",
+      "Property managers",
+      "Retail shops",
+      "Restaurants",
+      "Admin teams",
+      "Accountants",
+      "Business owners",
+      "Companies preparing for e-invoicing",
+      "Businesses wanting cleaner VAT records",
+    ],
   },
   finalCta: {
-    title: "Prepare your business for cleaner finance operations.",
-    sub: "Subscribe when the Meraki AI Assistant is available, or speak to our team about which package fits.",
+    title: "Cleaner invoices. Cleaner VAT. Cleaner audits.",
+    sub: "Start with an AI Invoice Review, or speak to our team about a workflow that fits.",
   },
 };
 
@@ -275,10 +351,63 @@ export const allPackages: {
     { name: "Setup + Accounting Bundle", best: "New entities wanting compliance from day one", price: "AED ___ bundled", includes: ["Setup package", "First 6 months Compliance accounting"], excludes: [], featured: true },
   ],
   ai: [
-    { name: "AI Self-Service", best: "Self-managed businesses", price: "AED ___ / month", includes: ["Portal access", "Invoice OCR", "Categorisation", "Reports export"], excludes: ["Human review"] },
-    { name: "AI + Monthly Review", best: "Founders wanting a safety net", price: "AED ___ / month", includes: ["Self-Service plan", "Monthly Meraki review", "Issue flagging"], excludes: ["Filings"] },
-    { name: "AI + Accounting Support", best: "SMEs replacing manual bookkeeping", price: "AED ___ / month", includes: ["Portal + OCR", "Bookkeeping", "Bank reconciliation"], excludes: ["VAT filings"], featured: true },
-    { name: "Full Managed AI Finance", best: "Businesses going fully digital", price: "AED ___ / month", includes: ["AI workflows", "Bookkeeping", "VAT & CT", "Monthly reporting"], excludes: [] },
+    {
+      name: "AI Invoice Review",
+      best: "Small businesses that want monthly invoice checking before VAT filing",
+      price: "Starting from AED ___ / month",
+      includes: [
+        "Upload invoices and receipts",
+        "AI extraction of key fields",
+        "VAT field checks",
+        "Missing TRN alerts",
+        "Duplicate invoice warnings",
+        "Basic review report",
+      ],
+      excludes: ["Accountant review", "Filings"],
+    },
+    {
+      name: "AI + Accountant Review",
+      best: "SMEs that want AI checks plus professional review",
+      price: "Starting from AED ___ / month",
+      includes: [
+        "Everything in AI Invoice Review",
+        "Meraki accountant review of flagged items",
+        "Monthly VAT summary",
+        "Recommended corrections",
+        "Compliance notes",
+      ],
+      excludes: ["Multi-user approvals"],
+      featured: true,
+    },
+    {
+      name: "AI Compliance Workflow",
+      best: "Businesses with regular invoices, multiple suppliers, and admin teams",
+      price: "Starting from AED ___ / month",
+      includes: [
+        "Multi-user upload workflow",
+        "Approval queue",
+        "Expense classification",
+        "Supplier invoice review",
+        "E-invoicing readiness tracking",
+        "Export-ready summaries",
+      ],
+      excludes: ["Bookkeeping", "Filings"],
+    },
+    {
+      name: "Managed Finance + AI",
+      best: "Companies that want Meraki to manage the full accounting and compliance workflow",
+      price: "Starting from AED ___ / month",
+      includes: [
+        "Monthly bookkeeping support",
+        "VAT and tax support",
+        "AI document review",
+        "Accountant verification",
+        "Management reports",
+        "Cash-flow review",
+        "Custom workflow",
+      ],
+      excludes: [],
+    },
   ],
 };
 
@@ -305,7 +434,7 @@ export const aboutPoints = [
   { title: "Why we exist", body: "Most UAE businesses juggle disconnected providers — a setup agent, a part-time bookkeeper, a tax filer, a PRO. The cost of that fragmentation shows up at year-end, in penalties, in missed decisions. We replace that with one connected system." },
   { title: "Our approach", body: "Structured workflows. Clear monthly reporting. AI-assisted operations where it accelerates work. Human review where accuracy matters. No theatre, no guesswork." },
   { title: "UAE focus", body: "We are built around UAE accounting practice and FTA processes. We understand how mainland and free zone operations differ, and how to keep both audit-ready." },
-  { title: "Digital-first future", body: "Our AI Assistant is being built to give clients a clean way to upload, categorise, and review their finance workflow — backed by our team." },
+  { title: "Digital-first future", body: "Meraki AI is being built as a UAE invoice compliance copilot — an intelligence layer that reviews invoices, checks VAT, and prepares records for filing alongside your existing accounting system." },
 ];
 
 export const faq = [
@@ -322,12 +451,16 @@ export const faq = [
     a: "Starting prices are shown for transparency. Final pricing depends on transaction volume, VAT status, number of employees, reporting requirements, and service scope.",
   },
   {
+    q: "Does Meraki AI replace my accounting software?",
+    a: "No. Meraki AI is a compliance intelligence layer — invoice review, VAT checks, duplicate detection, classification, and accountant routing. It works with your existing accounting software (Zoho, QuickBooks, Xero, Tally, or Excel), not in place of it.",
+  },
+  {
     q: "Does AI replace your accountants?",
-    a: "No. AI handles routine document work — capture, OCR, categorisation, alerts. Our team reviews where accuracy and judgement matter. Smart workflows, professional oversight.",
+    a: "No. AI handles routine document review — extraction, VAT field checks, duplicate alerts, suggested categories. Our team reviews where accuracy and judgement matter. Smart workflows, professional oversight.",
   },
   {
     q: "Can I subscribe online?",
-    a: "Yes — the AI Assistant is being prepared for online subscription. Accounting and tax packages can be initiated online with onboarding handled by our team.",
+    a: "Yes — Meraki AI is being prepared for online subscription. Accounting and tax packages can be initiated online with onboarding handled by our team.",
   },
   {
     q: "Mainland or free zone — which do you support?",

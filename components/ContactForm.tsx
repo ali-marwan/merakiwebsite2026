@@ -9,7 +9,7 @@ const services = [
   "PRO Services",
   "Cash Flow Management",
   "E-Invoicing Readiness",
-  "AI Assistant",
+  "Meraki AI / Invoice Review",
   "Audit Readiness",
   "Custom Advisory",
 ];
@@ -19,10 +19,10 @@ const packages = [
   "Compliance",
   "Growth",
   "Managed Finance",
-  "AI Self-Service",
-  "AI + Monthly Review",
-  "AI + Accounting Support",
-  "Full Managed AI Finance",
+  "AI Invoice Review",
+  "AI + Accountant Review",
+  "AI Compliance Workflow",
+  "Managed Finance + AI",
   "Not sure — recommend",
 ];
 
@@ -36,7 +36,7 @@ const businessTypes = [
 
 const emirates = ["Dubai", "Abu Dhabi", "Sharjah", "Ajman", "Ras Al Khaimah", "Fujairah", "Umm Al Quwain"];
 
-const intents = ["Speak to team", "Book consultation", "Request custom quote", "Subscribe to AI Assistant"];
+const intents = ["Speak to team", "Book consultation", "Request custom quote", "Start Meraki AI invoice review"];
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);

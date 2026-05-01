@@ -17,18 +17,18 @@ export function ContactCTA() {
               Build your business on a cleaner finance and compliance system.
             </h2>
             <p className="body-xl mt-6 text-ink-200 text-pretty">
-              View our packages, explore the AI Assistant, or speak directly
-              with our team about a custom solution.
+              View our packages, explore Meraki AI, or speak directly with our
+              team about a custom solution.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link href="/packages" className="btn-accent">
                 View Packages <span aria-hidden>→</span>
               </Link>
               <Link
-                href="/ai-assistant"
+                href="/meraki-ai"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-700 bg-transparent px-7 py-[14px] text-[14.5px] font-medium text-bone transition-all hover:bg-bone hover:text-ink-900"
               >
-                Explore AI Assistant <span aria-hidden>→</span>
+                Explore Meraki AI <span aria-hidden>→</span>
               </Link>
               <Link
                 href="/contact"

@@ -62,7 +62,7 @@ export function Footer() {
                 "Business Setup",
                 "PRO Services",
                 "E-Invoicing",
-                "AI Assistant",
+                "Meraki AI",
               ].map((s) => (
                 <li key={s} className="text-ink-100">
                   {s}

@@ -67,8 +67,8 @@ export function Navigation() {
 
         <div className="hidden lg:flex items-center gap-3">
           {/* TODO(auth): replace href with /portal/login when auth exists */}
-          <Link href="/ai-assistant" className="btn-ghost">
-            Portal
+          <Link href="/meraki-ai" className="btn-ghost">
+            Client Login
           </Link>
           <Link href="/contact" className="btn-primary">
             Speak to Our Team
@@ -116,8 +116,8 @@ export function Navigation() {
             ))}
             <div className="pt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {/* TODO(auth): replace with /portal/login */}
-              <Link href="/ai-assistant" className="btn-secondary w-full">
-                Portal
+              <Link href="/meraki-ai" className="btn-secondary w-full">
+                Client Login
               </Link>
               <Link href="/contact" className="btn-primary w-full">
                 Speak to Our Team

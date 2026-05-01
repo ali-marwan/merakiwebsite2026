@@ -99,19 +99,36 @@ export default function EInvoicingPage() {
         </div>
       </Section>
 
-      {/* AI capture teaser */}
+      {/* Meraki AI as readiness tool */}
       <Section tone="ink">
-        <div className="grid grid-cols-12 gap-10 items-center">
+        <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="col-span-12 lg:col-span-6">
-            <p className="eyebrow text-ink-200 [&::before]:bg-bronze-400">AI-assisted invoice capture</p>
-            <h2 className="heading-md mt-4 text-bone text-balance">
-              Capture invoices the moment they arrive — your records stay clean.
-            </h2>
-            <p className="body-lg mt-5 text-ink-200 text-balance">
-              Drop or photograph supplier invoices into the Meraki AI Assistant. OCR reads the fields, suggests categories, flags missing information, and prepares the entry for review — so your books and your VAT recovery don't drift.
+            <p className="eyebrow text-ink-200 [&::before]:bg-bronze-400">
+              AI-Assisted E-Invoicing Readiness
             </p>
-            <div className="mt-7">
-              <Link href="/ai-assistant" className="btn-accent">Explore AI Assistant <span aria-hidden>→</span></Link>
+            <h2 className="heading-md mt-5 text-bone text-balance">
+              A readiness tool — not an accredited provider.
+            </h2>
+            <p className="body-lg mt-6 text-ink-200 text-pretty">
+              Meraki AI helps businesses review invoice data, identify missing
+              tax details, classify documents, and prepare cleaner records for
+              future UAE e-invoicing workflows. It is designed to support
+              readiness and integration, not to replace accredited e-invoicing
+              service providers.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link
+                href="/contact?topic=invoice-workflow"
+                className="btn-accent"
+              >
+                Review My Invoice Workflow <span aria-hidden>→</span>
+              </Link>
+              <Link
+                href="/meraki-ai"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-700 bg-transparent px-7 py-[14px] text-[14.5px] font-medium text-bone transition-all hover:bg-bone hover:text-ink-900"
+              >
+                Explore Meraki AI <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6">

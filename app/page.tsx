@@ -5,7 +5,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { PackageCard } from "@/components/PackageCard";
 import { ProcessStep } from "@/components/ProcessStep";
-import { DashboardMockup } from "@/components/DashboardMockup";
+import { AssistantMockup } from "@/components/AssistantMockup";
 import { ContactCTA } from "@/components/ContactCTA";
 import {
   serviceStrip,
@@ -14,7 +14,6 @@ import {
   packagePreview,
   whyMeraki,
   howItWorks,
-  portalFeatures,
 } from "@/lib/content";
 
 export default function HomePage() {
@@ -124,8 +123,8 @@ export default function HomePage() {
               </h3>
               <p className="text-[14.5px] text-ink-200 mt-3 leading-relaxed">
                 The same team that sets you up handles your monthly accounts,
-                files your VAT, prepares your reports, and powers your AI
-                Assistant.
+                files your VAT, prepares your reports, and powers your Meraki
+                AI workflow.
               </p>
             </div>
             <span className="mt-7 inline-flex items-center gap-2 text-bronze-300 text-[14px] font-medium">
@@ -194,41 +193,73 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 8 — AI Assistant */}
+      {/* 8 — Meraki AI */}
       <Section tone="ink">
         <div className="grid grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="col-span-12 lg:col-span-5">
             <p className="eyebrow text-ink-200 [&::before]:bg-bronze-400">
-              Meraki AI Assistant
+              Meraki AI
             </p>
             <h2 className="heading-md mt-5 text-bone text-balance">
-              AI-Assisted Finance Workflows, Built Into the Meraki System.
+              Meraki AI: Your UAE Invoice Compliance Copilot.
             </h2>
             <p className="body-lg mt-6 text-ink-200 text-pretty">
-              Upload invoices, receipts, petty cash records, and notes through
-              a smart finance workflow. Meraki's AI Assistant helps organise
-              documents, suggest categories, flag missing information, and
-              prepare records for professional accounting and tax review.
+              AI-powered invoice review, VAT checking, tax categorisation, and
+              e-invoicing readiness — built to work with your existing
+              accounting systems.
             </p>
-            <p className="mt-5 font-display text-[15px] font-semibold tracking-display text-bronze-300">
-              Part of one system. One team. One standard.
+            <p className="body mt-5 text-ink-200 text-pretty prose-readable">
+              Meraki AI helps SMEs, business owners, accountants, and admin
+              teams review invoices before they become accounting, VAT, or
+              compliance problems. Upload invoices, receipts, supplier
+              documents, quotations, LPOs, emails, or WhatsApp screenshots.
+              Meraki AI extracts the key details, checks for missing
+              information, flags VAT risks, and prepares a clear review report
+              for accountant approval.
             </p>
+            <div className="mt-6 rounded-xl border border-bronze-400/40 bg-bronze-500/10 px-5 py-4">
+              <p className="font-display text-[15px] font-semibold tracking-display text-bronze-300 leading-relaxed">
+                Meraki AI does not replace your accounting software. It works
+                with your accounting system as a compliance and intelligence
+                layer.
+              </p>
+            </div>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Link href="/ai-assistant" className="btn-accent">
-                Explore AI Assistant <span aria-hidden>→</span>
+              <Link href="/meraki-ai" className="btn-accent">
+                Explore Meraki AI <span aria-hidden>→</span>
               </Link>
               <Link
-                href="/contact?topic=ai-assistant"
+                href="/contact?topic=invoice-review"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-700 bg-transparent px-7 py-[14px] text-[14.5px] font-medium text-bone transition-all hover:bg-bone hover:text-ink-900"
               >
-                Subscribe When Available <span aria-hidden>→</span>
+                Start Invoice Review <span aria-hidden>→</span>
               </Link>
-              <Link href="/contact" className="btn-ghost text-ink-200 hover:bg-ink-900 hover:text-bone">
+              <Link
+                href="/contact"
+                className="btn-ghost text-ink-200 hover:bg-ink-900 hover:text-bone"
+              >
                 Speak to Our Team
               </Link>
             </div>
             <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {portalFeatures.slice(0, 4).map((f) => (
+              {[
+                {
+                  title: "Invoice & VAT review",
+                  body: "TRN, VAT amount, sequence, supplier validation.",
+                },
+                {
+                  title: "Duplicate detection",
+                  body: "Catches duplicates before they hit your books.",
+                },
+                {
+                  title: "Tax categorisation",
+                  body: "Suggested categories for VAT and corporate tax.",
+                },
+                {
+                  title: "Works with your stack",
+                  body: "Zoho, QuickBooks, Xero, Tally, or Excel.",
+                },
+              ].map((f) => (
                 <li
                   key={f.title}
                   className="rounded-xl border border-ink-700 bg-ink-900 p-5"
@@ -244,7 +275,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="col-span-12 lg:col-span-7">
-            <DashboardMockup />
+            <AssistantMockup />
           </div>
         </div>
       </Section>

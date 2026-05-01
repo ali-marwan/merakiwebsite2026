@@ -7,9 +7,9 @@ import { PackageCard } from "@/components/PackageCard";
 import { allPackages } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Packages — Accounting, Tax, Setup & AI Assistant Plans",
+  title: "Packages — Accounting, Tax, Setup & Meraki AI Plans",
   description:
-    "Compare Meraki packages: monthly accounting, VAT and corporate tax, business setup, and AI Assistant subscriptions. Transparent starting prices for UAE businesses.",
+    "Compare Meraki packages: monthly accounting, VAT and corporate tax, business setup, and Meraki AI invoice compliance plans. Transparent starting prices for UAE businesses.",
 };
 
 const sections = [
@@ -36,9 +36,9 @@ const sections = [
   },
   {
     key: "ai",
-    name: "AI Assistant Packages",
+    name: "Meraki AI Packages",
     eyebrow: "Automate",
-    description: "Subscribe to the Meraki AI Assistant with the level of human review and accounting support that fits.",
+    description: "Use Meraki AI as your UAE invoice compliance copilot — choose the level of human review that fits your business.",
     items: allPackages.ai,
   },
 ];
