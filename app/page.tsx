@@ -201,27 +201,24 @@ export default function HomePage() {
               Meraki AI
             </p>
             <h2 className="heading-md mt-5 text-bone text-balance">
-              Meraki AI: Your UAE Invoice Compliance Copilot.
+              Meraki AI: Invoice Compliance Workflow, Not Just Automation.
             </h2>
             <p className="body-lg mt-6 text-ink-200 text-pretty">
-              AI-powered invoice review, VAT checking, tax categorisation, and
-              e-invoicing readiness — built to work with your existing
-              accounting systems.
+              AI-powered invoice review, UAE VAT checks, accountant approval,
+              and document control — built to work with your existing
+              accounting system.
             </p>
             <p className="body mt-5 text-ink-200 text-pretty prose-readable">
-              Meraki AI helps SMEs, business owners, accountants, and admin
-              teams review invoices before they become accounting, VAT, or
-              compliance problems. Upload invoices, receipts, supplier
-              documents, quotations, LPOs, emails, or WhatsApp screenshots.
-              Meraki AI extracts the key details, checks for missing
-              information, flags VAT risks, and prepares a clear review report
-              for accountant approval.
+              Meraki AI helps businesses move from scattered invoices,
+              WhatsApp messages, emails, and manual checks into a structured
+              review workflow. AI extracts and flags issues, structured checks
+              review invoice and VAT details, and Meraki professionals can
+              verify flagged items before monthly VAT and compliance reports
+              are finalised.
             </p>
             <div className="mt-6 rounded-xl border border-bronze-400/40 bg-bronze-500/10 px-5 py-4">
               <p className="font-display text-[15px] font-semibold tracking-display text-bronze-300 leading-relaxed">
-                Meraki AI does not replace your accounting software. It works
-                with your accounting system as a compliance and intelligence
-                layer.
+                AI checks. Meraki verifies. Your records stay ready.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">
@@ -232,7 +229,7 @@ export default function HomePage() {
                 href="/contact?topic=invoice-review"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-ink-700 bg-transparent px-7 py-[14px] text-[14.5px] font-medium text-bone transition-all hover:bg-bone hover:text-ink-900"
               >
-                Start Invoice Review <span aria-hidden>→</span>
+                Request AI Invoice Review <span aria-hidden>→</span>
               </Link>
               <Link
                 href="/contact"
@@ -244,16 +241,16 @@ export default function HomePage() {
             <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               {[
                 {
-                  title: "Invoice & VAT review",
-                  body: "TRN, VAT amount, sequence, supplier validation.",
+                  title: "AI extraction + UAE rules",
+                  body: "Read invoices, then check them against VAT and tax logic.",
                 },
                 {
-                  title: "Duplicate detection",
-                  body: "Catches duplicates before they hit your books.",
+                  title: "Accountant review queue",
+                  body: "Flagged items routed to Meraki professionals.",
                 },
                 {
-                  title: "Tax categorisation",
-                  body: "Suggested categories for VAT and corporate tax.",
+                  title: "Audit trail & approval",
+                  body: "Document, review, and approval history kept clean.",
                 },
                 {
                   title: "Works with your stack",

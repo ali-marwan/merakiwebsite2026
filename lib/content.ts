@@ -175,14 +175,109 @@ export const portalFeatures = [
   { title: "Human review built in", body: "Smart workflows, professional oversight where accuracy matters." },
 ];
 
-// Meraki AI — UAE invoice compliance copilot. Dedicated page content.
+// Meraki AI — UAE invoice compliance workflow. Dedicated page content.
 export const merakiAi = {
   hero: {
     eyebrow: "Meraki AI",
-    badge: "UAE Invoice Compliance Copilot",
-    headline: "AI-Powered Invoice, VAT & Compliance Review for UAE Businesses",
-    sub: "Meraki AI helps businesses review invoices, detect VAT errors, classify transactions, prepare for UAE e-invoicing, and connect clean data with existing accounting systems like Zoho, QuickBooks, Xero, Tally, or Excel.",
-    principle: "Your UAE invoice compliance copilot.",
+    badge: "AI checks. Meraki verifies.",
+    headline: "UAE Invoice Compliance Workflow, Powered by AI and Reviewed by Professionals",
+    sub: "Meraki AI helps businesses review invoices, detect VAT risks, classify documents, prepare for e-invoicing readiness, and keep records accountant-ready — without replacing existing accounting systems.",
+    principle: "AI checks. Meraki verifies. Your records stay ready.",
+  },
+  // Built Beyond Automation — 5 layered cards
+  builtBeyond: {
+    eyebrow: "Built beyond automation",
+    title: "Built Beyond Automation. Designed for Compliance.",
+    body: "Meraki AI is not just an invoice reader. It supports a structured UAE compliance workflow that combines AI-powered checks, VAT and tax review logic, accountant approval, document control, and clear reporting. The goal is not only to extract data, but to help businesses keep invoice records clean, reviewable, and ready for VAT, tax, and future e-invoicing requirements.",
+    cards: [
+      {
+        title: "AI-Powered Checks",
+        body: "Extract invoice details, detect missing fields, identify possible duplicates, and suggest classifications.",
+      },
+      {
+        title: "UAE Compliance Logic",
+        body: "Apply structured checks for invoice fields, TRN details, VAT treatment, supplier information, expense categories, and e-invoicing readiness.",
+      },
+      {
+        title: "Meraki Professional Review",
+        body: "Flagged items can be reviewed by Meraki accountants before reports are finalised or submitted.",
+      },
+      {
+        title: "Audit Trail & Document Control",
+        body: "Keep records of uploaded documents, detected issues, corrections, review notes, approvals, and monthly summaries.",
+      },
+      {
+        title: "Existing System Integration",
+        body: "Work with existing accounting tools such as Zoho Books, QuickBooks, Xero, Tally, Excel, email, and WhatsApp workflows instead of replacing them.",
+      },
+    ],
+  },
+  // Moat — Generic AI vs Meraki AI Workflow
+  moat: {
+    eyebrow: "Why it's more than generic AI",
+    title: "Why Meraki AI Is More Than Generic AI",
+    body: "Generic AI can read documents and answer questions. Meraki AI structures those capabilities into a controlled compliance workflow with UAE rules, professional oversight, and a documented review trail.",
+    generic: [
+      "Reads documents",
+      "Summarises invoices",
+      "Suggests categories",
+      "Answers VAT questions",
+      "Produces basic outputs",
+      "No accountability",
+      "No structured review workflow",
+      "No document approval trail",
+    ],
+    meraki: [
+      "Extracts invoice data",
+      "Checks UAE VAT and invoice fields",
+      "Flags TRN, supplier, VAT, duplicate, and classification issues",
+      "Routes risky items for Meraki accountant review",
+      "Stores document and review trail",
+      "Prepares monthly VAT/compliance summaries",
+      "Supports e-invoicing readiness",
+      "Works with existing accounting systems",
+      "Provides professional oversight where accuracy matters",
+    ],
+    statement: "Generic AI can assist. Meraki AI creates a controlled compliance workflow.",
+  },
+  // Layered model — formula
+  layered: {
+    eyebrow: "AI + UAE Rules + Professional Review",
+    title: "A layered review model — not a single AI prompt.",
+    body: "Meraki AI is designed around a layered review model. AI helps extract and interpret documents, structured UAE compliance checks identify missing or risky invoice details, and Meraki professionals review flagged items where needed.",
+    formula: [
+      { label: "AI Extraction", note: "Read & structure" },
+      { label: "UAE VAT & Tax Checks", note: "Rule-based review" },
+      { label: "Accountant Review", note: "Human verification" },
+      { label: "Audit Trail", note: "Document control" },
+      { label: "Monthly Summary", note: "Filing-ready" },
+    ],
+    note: "Designed-for direction. Built around UAE invoice, VAT, tax, and e-invoicing requirements.",
+  },
+  // Hybrid commercial models
+  hybrid: {
+    eyebrow: "Service + SaaS hybrid",
+    title: "AI is strongest with people.",
+    body: "Meraki AI supports several commercial models — from self-service invoice checks to a fully managed accounting and compliance workflow.",
+    statement: "Meraki AI is strongest when combined with Meraki's accounting and tax team.",
+    models: [
+      {
+        title: "AI Self-Service",
+        body: "For businesses that want invoice checks and reports.",
+      },
+      {
+        title: "AI + Accountant Review",
+        body: "For businesses that want Meraki to review flagged items.",
+      },
+      {
+        title: "Managed Accounting + AI",
+        body: "For clients who want Meraki to manage bookkeeping, VAT, tax, and reporting using AI-assisted workflows.",
+      },
+      {
+        title: "E-Invoicing Readiness + AI",
+        body: "For companies preparing invoice data, workflows, and systems for future UAE e-invoicing.",
+      },
+    ],
   },
   // Section 1 — What It Is
   whatItIs: {
@@ -366,8 +461,8 @@ export const allPackages: {
       excludes: ["Accountant review", "Filings"],
     },
     {
-      name: "AI + Accountant Review",
-      best: "SMEs that want AI checks plus professional review",
+      name: "AI + Meraki Review",
+      best: "SMEs that want AI checks plus professional review of flagged items",
       price: "Starting from AED ___ / month",
       includes: [
         "Everything in AI Invoice Review",
@@ -380,7 +475,7 @@ export const allPackages: {
       featured: true,
     },
     {
-      name: "AI Compliance Workflow",
+      name: "Compliance Workflow",
       best: "Businesses with regular invoices, multiple suppliers, and admin teams",
       price: "Starting from AED ___ / month",
       includes: [

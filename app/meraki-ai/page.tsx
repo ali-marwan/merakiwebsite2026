@@ -8,19 +8,23 @@ import { PackageCard } from "@/components/PackageCard";
 import { merakiAi, allPackages } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Meraki AI — UAE Invoice Compliance Copilot",
+  title: "Meraki AI — UAE Invoice Compliance Workflow",
   description:
-    "Meraki AI is an AI-powered UAE invoicing and compliance assistant. It reviews invoices, detects VAT errors, classifies transactions, prepares for e-invoicing, and works with Zoho, QuickBooks, Xero, Tally, or Excel.",
+    "Meraki AI is a UAE invoice compliance workflow combining AI extraction, structured VAT and tax checks, accountant review, document control, and integration with existing accounting systems.",
 };
 
 export default function MerakiAIPage() {
   const {
     hero,
     whatItIs,
+    builtBeyond,
+    moat,
+    layered,
     checks,
     mvp,
     integrations,
     workflow,
+    hybrid,
     compliance,
     audience,
     finalCta,
@@ -43,7 +47,7 @@ export default function MerakiAIPage() {
             <div className="col-span-12 lg:col-span-7 animate-fade-up">
               <div className="flex flex-wrap items-center gap-2 mb-6">
                 <span className="chip-accent">{hero.badge}</span>
-                <span className="chip">Works with your accounting software</span>
+                <span className="chip">Workflow + human review</span>
                 <span className="chip">UAE-focused</span>
               </div>
               <p className="eyebrow">{hero.eyebrow}</p>
@@ -63,7 +67,7 @@ export default function MerakiAIPage() {
                   href="/contact?topic=invoice-review"
                   className="btn-accent"
                 >
-                  Start Invoice Review <span aria-hidden>→</span>
+                  Request AI Invoice Review <span aria-hidden>→</span>
                 </Link>
                 <Link href="#packages" className="btn-secondary">
                   View AI Packages <span aria-hidden>→</span>
@@ -96,7 +100,7 @@ export default function MerakiAIPage() {
           />
           <ComparisonColumn
             title="Meraki AI"
-            sub="UAE invoice compliance copilot"
+            sub="UAE invoice compliance workflow"
             items={whatItIs.merakiAi}
             tone="accent"
           />
@@ -108,8 +112,107 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 2 — What it checks */}
+      {/* SECTION 2 — Built Beyond Automation */}
       <Section tone="sand">
+        <SectionHeader
+          eyebrow={builtBeyond.eyebrow}
+          title={builtBeyond.title}
+          description={builtBeyond.body}
+        />
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {builtBeyond.cards.map((c, i) => (
+            <div key={c.title} className="card p-7 card-hover">
+              <span className="font-mono text-[11px] text-bronze-500">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-[19px] md:text-[20px] font-semibold tracking-display mt-4 text-ink-900">
+                {c.title}
+              </h3>
+              <p className="text-[13.5px] text-ink-600 mt-2.5 leading-relaxed">
+                {c.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* SECTION 3 — Moat: Generic AI vs Meraki AI */}
+      <Section>
+        <SectionHeader
+          eyebrow={moat.eyebrow}
+          title={moat.title}
+          description={moat.body}
+        />
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <ComparisonColumn
+            title="Generic AI tool"
+            sub="ChatGPT · plain LLMs · single-prompt apps"
+            items={moat.generic}
+            tone="muted"
+          />
+          <ComparisonColumn
+            title="Meraki AI workflow"
+            sub="Workflow · UAE rules · professional review"
+            items={moat.meraki}
+            tone="accent"
+          />
+        </div>
+        <div className="mt-10 rounded-2xl border border-ink-900 bg-ink-900 text-bone p-6 md:p-8 text-center">
+          <p className="font-display text-[20px] md:text-[24px] font-semibold tracking-display">
+            {moat.statement}
+          </p>
+        </div>
+      </Section>
+
+      {/* SECTION 4 — Layered review model (formula) */}
+      <Section tone="ink">
+        <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="col-span-12 lg:col-span-5">
+            <p className="eyebrow text-ink-200 [&::before]:bg-bronze-400">
+              {layered.eyebrow}
+            </p>
+            <h2 className="heading-md mt-5 text-bone text-balance">
+              {layered.title}
+            </h2>
+            <p className="body-lg mt-6 text-ink-200 text-pretty">
+              {layered.body}
+            </p>
+            <p className="mt-6 text-[12.5px] text-ink-400 italic max-w-md">
+              {layered.note}
+            </p>
+          </div>
+          <div className="col-span-12 lg:col-span-7">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+              {layered.formula.map((f, i) => (
+                <div key={f.label} className="relative">
+                  <div className="rounded-xl border border-ink-700 bg-ink-900 px-4 py-5 h-full">
+                    <span className="font-mono text-[10px] text-bronze-400">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <p className="font-display text-[15px] md:text-[16px] font-semibold tracking-display mt-3 text-bone leading-tight">
+                      {f.label}
+                    </p>
+                    <p className="text-[11.5px] text-ink-200 mt-1.5">
+                      {f.note}
+                    </p>
+                  </div>
+                  {i < layered.formula.length - 1 && (
+                    <span
+                      className="hidden md:flex absolute -right-2.5 top-1/2 -translate-y-1/2 h-6 w-5 items-center justify-center text-bronze-400/60"
+                      aria-hidden
+                    >
+                      →
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* SECTION 5 — What it checks */}
+      <Section>
         <SectionHeader
           eyebrow="What it checks"
           title="Invoice checks before they become tax problems."
@@ -135,14 +238,14 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 3 — MVP product */}
-      <Section>
+      {/* SECTION 6 — MVP product */}
+      <Section tone="sand">
         <div className="grid grid-cols-12 gap-10 lg:gap-16">
           <div className="col-span-12 lg:col-span-5">
             <p className="eyebrow">First product</p>
             <h2 className="heading-md mt-5 text-balance">{mvp.title}</h2>
             <p className="body-lg mt-5 text-pretty">{mvp.sub}</p>
-            <div className="mt-8 rounded-2xl border border-ink-100 bg-bone p-6">
+            <div className="mt-8 rounded-2xl border border-ink-100 bg-white p-6">
               <p className="text-[12px] uppercase tracking-wider font-medium text-ink-400">
                 The review report shows
               </p>
@@ -192,33 +295,7 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 4 — Integrations */}
-      <Section tone="sand">
-        <SectionHeader
-          eyebrow="Integration direction"
-          title={integrations.title}
-          description={integrations.body}
-        />
-        <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-9 gap-3">
-          {integrations.items.map((i) => (
-            <div
-              key={i.name}
-              className="rounded-xl border border-ink-100 bg-white p-4 text-center"
-            >
-              <p className="text-[14px] text-ink-900 font-medium">{i.name}</p>
-              <p className="text-[10.5px] text-ink-400 mt-1.5 font-medium uppercase tracking-wider">
-                {i.note}
-              </p>
-            </div>
-          ))}
-        </div>
-        <p className="mt-8 text-[12.5px] text-ink-400 text-center">
-          Integrations listed are planned or export-ready directions, not live
-          backend connections at this stage.
-        </p>
-      </Section>
-
-      {/* SECTION 5 — Workflow */}
+      {/* SECTION 7 — Workflow */}
       <Section>
         <SectionHeader
           eyebrow="Workflow"
@@ -252,7 +329,62 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 6 — Compliance strategy */}
+      {/* SECTION 8 — Integrations */}
+      <Section tone="sand">
+        <SectionHeader
+          eyebrow="Integration direction"
+          title={integrations.title}
+          description={integrations.body}
+        />
+        <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-9 gap-3">
+          {integrations.items.map((i) => (
+            <div
+              key={i.name}
+              className="rounded-xl border border-ink-100 bg-white p-4 text-center"
+            >
+              <p className="text-[14px] text-ink-900 font-medium">{i.name}</p>
+              <p className="text-[10.5px] text-ink-400 mt-1.5 font-medium uppercase tracking-wider">
+                {i.note}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-8 text-[12.5px] text-ink-400 text-center">
+          Integrations listed are planned or export-ready directions, not live
+          backend connections at this stage.
+        </p>
+      </Section>
+
+      {/* SECTION 9 — Hybrid commercial models */}
+      <Section>
+        <SectionHeader
+          eyebrow={hybrid.eyebrow}
+          title={hybrid.title}
+          description={hybrid.body}
+        />
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {hybrid.models.map((m, i) => (
+            <div key={m.title} className="card p-6 card-hover">
+              <span className="font-mono text-[11px] text-bronze-500">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-[19px] md:text-[20px] font-semibold tracking-display mt-4 text-ink-900">
+                {m.title}
+              </h3>
+              <p className="text-[13.5px] text-ink-600 mt-2.5 leading-relaxed">
+                {m.body}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 rounded-2xl border border-bronze-400/40 bg-gradient-to-br from-bronze-500 to-bronze-600 text-white p-6 md:p-8 text-center">
+          <p className="font-display text-[20px] md:text-[24px] font-semibold tracking-display">
+            {hybrid.statement}
+          </p>
+        </div>
+      </Section>
+
+      {/* SECTION 10 — Compliance strategy */}
       <Section tone="ink">
         <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="col-span-12 lg:col-span-7">
@@ -297,7 +429,7 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 7 — Audience */}
+      {/* SECTION 11 — Audience */}
       <Section>
         <div className="grid grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="col-span-12 lg:col-span-5">
@@ -322,7 +454,7 @@ export default function MerakiAIPage() {
         </div>
       </Section>
 
-      {/* SECTION 8 — Subscription packages */}
+      {/* SECTION 12 — Subscription packages */}
       <Section id="packages" tone="sand">
         <SectionHeader
           eyebrow="Subscription packages"
@@ -342,7 +474,7 @@ export default function MerakiAIPage() {
               cta={
                 p.name === "AI Invoice Review"
                   ? "Start Review"
-                  : p.name === "AI Compliance Workflow"
+                  : p.name === "Compliance Workflow"
                   ? "Request Setup"
                   : p.featured
                   ? "Subscribe"
@@ -353,8 +485,8 @@ export default function MerakiAIPage() {
           ))}
         </div>
         <p className="mt-10 text-[12.5px] text-ink-400 text-center">
-          Final pricing depends on usage volume and the level of human review
-          and accounting support included.
+          Final pricing depends on usage volume, level of human review, and
+          accounting support included.
           {/* TODO(subscriptions): live pricing via billing provider */}
         </p>
       </Section>
@@ -364,7 +496,7 @@ export default function MerakiAIPage() {
         <div className="container-x py-24 md:py-32 lg:py-36">
           <div className="rounded-3xl border border-ink-100 bg-white p-10 md:p-16 lg:p-20 text-center">
             <p className="eyebrow justify-center inline-flex">
-              Your UAE invoice compliance copilot
+              AI checks. Meraki verifies.
             </p>
             <h2 className="heading-lg mt-6 text-balance max-w-3xl mx-auto">
               {finalCta.title}
@@ -377,7 +509,7 @@ export default function MerakiAIPage() {
                 href="/contact?topic=invoice-review"
                 className="btn-accent"
               >
-                Start Invoice Review <span aria-hidden>→</span>
+                Request AI Invoice Review <span aria-hidden>→</span>
               </Link>
               <Link href="/contact" className="btn-primary">
                 Speak to Our Team <span aria-hidden>→</span>

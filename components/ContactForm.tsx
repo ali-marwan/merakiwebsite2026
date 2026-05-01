@@ -20,8 +20,8 @@ const packages = [
   "Growth",
   "Managed Finance",
   "AI Invoice Review",
-  "AI + Accountant Review",
-  "AI Compliance Workflow",
+  "AI + Meraki Review",
+  "Compliance Workflow",
   "Managed Finance + AI",
   "Not sure — recommend",
 ];

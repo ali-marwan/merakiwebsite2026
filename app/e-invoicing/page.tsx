@@ -110,11 +110,13 @@ export default function EInvoicingPage() {
               A readiness tool — not an accredited provider.
             </h2>
             <p className="body-lg mt-6 text-ink-200 text-pretty">
-              Meraki AI helps businesses review invoice data, identify missing
-              tax details, classify documents, and prepare cleaner records for
-              future UAE e-invoicing workflows. It is designed to support
-              readiness and integration, not to replace accredited e-invoicing
-              service providers.
+              Meraki AI supports e-invoicing readiness by helping businesses
+              clean invoice data, detect missing tax details, classify
+              documents, and maintain a review trail before integration with
+              future accredited e-invoicing service providers. It is a
+              readiness and workflow support layer, not an accredited service
+              provider, and does not submit e-invoices to the FTA on your
+              behalf.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
